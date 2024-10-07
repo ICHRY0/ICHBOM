@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>SMS Bomber</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <h2 align="center" class="head"></h2>
+
+        <section class="body">
+            <section class="container">
+                <label for="phone">Mobile Number ( without +91 ):</label>
+                <input type="number" class="phone" id="phone" name="phone" value=" " maxlength="10" placeholder="8123456780" required ><br>
+                <label for="limits">Quantity of SMS: </label>
+                <input type="number" class="limits" id="limits" name="limits" value="10" required >
+                <span id="quantity"> Sent: </span>
+                <span id="cnt"></span>
+                <input type="submit" value="Bomb" onclick="call()">
+                <script src="script.js"></script>
+            </section>
+        </section>
+
+        <footer>
+        <p><strong>Note: </strong> to stop bomber close the tab.</p>
+        </footer>
+
+    </body>
+</html>
+
